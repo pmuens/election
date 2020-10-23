@@ -8,7 +8,9 @@ Simply run `npm install`.
 
 ## Development
 
-TBD
+`npx truffle migrate`
+
+`npx truffle console`
 
 ## Testing
 
