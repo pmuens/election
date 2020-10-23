@@ -11,9 +11,23 @@ contract Election {
   uint public count;
   mapping(uint => Candidate) public candidates;
 
+  mapping(address => bool) public voters;
+
+  event NewVote(uint indexed _candidateId);
+
   function addCandidate(string memory _name) private {
     count++;
     candidates[count] = Candidate(count, 0, _name);
+  }
+
+  function vote(uint _candidateId) public {
+    require(!voters[msg.sender]);
+    require(_candidateId > 0 && _candidateId <= count);
+
+    voters[msg.sender] = true;
+    candidates[_candidateId].votes++;
+
+    emit NewVote(_candidateId);
   }
 
   constructor() {
