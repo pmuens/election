@@ -1,6 +1,6 @@
 # Election
 
-Election dApp with a web3-powered frontend.
+Election dApp with a web3-powered frontend based on [the dApp Universities Tutorial](https://www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial).
 
 ## Setup
 
