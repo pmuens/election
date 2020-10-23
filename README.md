@@ -4,7 +4,9 @@ Election dApp with a web3-powered frontend based on [the dApp Universities Tutor
 
 ## Setup
 
-Simply run `npm install`.
+1. Download and setup [Ganache](https://www.trufflesuite.com/ganache)
+1. Install [MetaMask](https://metamask.io/)
+1. Run `npm install`
 
 ## Development
 
@@ -16,4 +18,4 @@ Simply run `npm install`.
 
 ## Testing
 
-`npx truffle test`
+`npm test` or (`npx truffle test`)
